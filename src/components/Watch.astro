@@ -1,0 +1,71 @@
+---
+
+---
+
+<div id="countdown"></div>
+
+<script is:inline>
+
+    var targetDate = new Date(2024, 10, 01, 13, 0, 0);
+
+    function updateCountdown() {
+        var currentDate = new Date();
+        var timeRemaining = targetDate - currentDate;
+
+        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown').innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's';
+
+        if (timeRemaining <= 100) {
+            clearInterval(countdownInterval);
+            document.getElementById('countdown').innerHTML = '¡Tiempo terminado!';
+        }
+}
+
+// Actualiza el contador cada segundo
+var countdownInterval = setInterval(updateCountdown, 1000);
+</script>
+
+<style>
+    #countdown {
+        font-family: 'Cambria', 'Georgia', system-ui, sans-serif;
+        font-size: 32px;
+        text-align: center;
+        color: #4b4b4b;
+        padding: 10px;
+    }
+    #countdown span {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #countdown span:first-child {
+        margin-left: 0;
+    }
+
+    #countdown span:last-child {
+        margin-right: 0;
+    }
+
+    #countdown span:before,
+    #countdown span:after {
+        content: ":";
+        color: #fff;
+    }
+
+    #countdown span:last-child:before,
+    #countdown span:last-child:after {
+        content: "";
+    }
+
+    #countdown span:before {
+        margin-right: -5px;
+    }
+
+    #countdown span:after {
+        margin-left: -5px;
+    }
+</style>
