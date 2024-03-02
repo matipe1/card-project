@@ -6,19 +6,27 @@ import Button from '../components/Button.astro';
 import Watch from '../components/Watch.astro';
 
 import { Image } from 'astro:assets';
-import BackgroundLavanda from '../assets/images/BackgroundLavanda.png';
+import Background02 from '../assets/images/Background02.jpg';
+import Foto01 from '../assets/images/foto01.jpeg';
+import Foto02 from '../assets/images/foto02.jpeg';
+import Foto03 from '../assets/images/foto03.jpeg';
+import Foto04 from '../assets/images/foto04.jpeg';
+import Foto05 from '../assets/images/foto05.jpeg';
+import Foto06 from '../assets/images/foto06.jpeg';
+import Foto07 from '../assets/images/foto07.jpeg';
+import Foto08 from '../assets/images/foto08.jpeg';
 ---
 
 <Layout title="Quinces Agos">
 	<main>
-		<! -- PORTADA CON FOTO -->
+		<!-- PORTADA CON FOTO -->
 		<div>
 			<section>
 				<div class="h-screen">
-					<Image class="absolute h-screen object-cover z-0 w-full" src={BackgroundLavanda} alt="Blue sky background" />
+					<Image class="absolute h-screen object-cover z-0 w-full shadow-xl" src={Background02} alt="Blue sky background" />
 					<div class="absolute inset-x-0 bottom-0">
-						<div id="title" class="h-16 my-44">
-							<h1 class="text-8xl m-1 text-white">AGOS</h1>
+						<div id="title" class="h-16 my-44 mb-96">
+							<h1 class="text-8xl m-1 text-white drop-shadow-2xl font-medium">AGOS</h1>
 							<p class="text-lg text-white">MIS QUINCE AÑOS</p>
 						</div>
 						<div class="arrow-container">
@@ -36,13 +44,13 @@ import BackgroundLavanda from '../assets/images/BackgroundLavanda.png';
 				</div>
 			</section>
 
-			<! -- DESCRIPCION -->
+			<!-- DESCRIPCION -->
 			<section>
 				<div class="section">
 					<Icon name="confeti" />
 					<h2 class="subtitle pt-5">FIESTA</h2>
 					<p class="text-lg text-[#4B4B4B]">
-						¡Te espero el Viernes 01 de noviembre de 21:00 a 05:00 hs para festejar este gran momento de mi vida! <br>
+						¡Te espero el Viernes 01 de noviembre de 22:00 a 05:00 hs para festejar este gran momento de mi vida! <br>
 						Salón Don Ignacio, Av. Rancagua 8400, Córdoba. <br>
 						Clickeá en el botón de abajo y encontrá las indicaciones para llegar, ¡nos vemos!😉
 					</p>
@@ -50,37 +58,37 @@ import BackgroundLavanda from '../assets/images/BackgroundLavanda.png';
 				</div>
 			</section>
 
-			<! -- GRILLA IMAGENES -->
+			<!-- GRILLA IMAGENES -->
 			<section>
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-5">
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-6 md:px-40">
 					<div>
-						<Image class="h-auto max-w-full rounded-lg" src={BackgroundLavanda} alt="Three Balloons" />
+						<Image class="shadow-xl drop-shadow-xl h-auto max-w-full rounded-lg" src={Foto01} alt="Three Balloons" />
 					</div>
 					<div>
-						<Image class="h-auto max-w-full rounded-lg" src={BackgroundLavanda} alt="Three Balloons" />
+						<Image class="shadow-xl drop-shadow-xl h-auto max-w-full rounded-lg" src={Foto02} alt="Three Balloons" />
 					</div>
 					<div>
-						<Image class="h-auto max-w-full rounded-lg" src={BackgroundLavanda} alt="Three Balloons" />
+						<Image class="shadow-xl drop-shadow-xl h-auto max-w-full rounded-lg" src={Foto03} alt="Three Balloons" />
 					</div>
 					<div>
-						<Image class="h-auto max-w-full rounded-lg" src={BackgroundLavanda} alt="Three Balloons" />
+						<Image class="shadow-xl drop-shadow-xl h-auto max-w-full rounded-lg" src={Foto04} alt="Three Balloons" />
 					</div>
 					<div>
-						<Image class="h-auto max-w-full rounded-lg" src={BackgroundLavanda} alt="Three Balloons" />
+						<Image class="shadow-xl drop-shadow-xl h-auto max-w-full rounded-lg" src={Foto05} alt="Three Balloons" />
 					</div>
 					<div>
-						<Image class="h-auto max-w-full rounded-lg" src={BackgroundLavanda} alt="Three Balloons" />
+						<Image class="shadow-xl drop-shadow-xl h-auto max-w-full rounded-lg" src={Foto06} alt="Three Balloons" />
 					</div>
 					<div>
-						<Image class="h-auto max-w-full rounded-lg" src={BackgroundLavanda} alt="Three Balloons" />
+						<Image class="shadow-xl drop-shadow-xl h-auto max-w-full rounded-lg" src={Foto07} alt="Three Balloons" />
 					</div>
 					<div>
-						<Image class="h-auto max-w-full rounded-lg" src={BackgroundLavanda} alt="Three Balloons" />
+						<Image class="shadow-xl drop-shadow-xl h-auto max-w-full rounded-lg" src={Foto08} alt="Three Balloons" />
 					</div>
 				</div>
 			</section>
 
-			<! -- CONFIRMACION DE ASISTENCIA -->
+			<!-- CONFIRMACION DE ASISTENCIA -->
 			<section>
 				<div class="section">		
 					<h2 class="subtitle">CONFIRMACIÓN DE ASISTENCIA</h2>
@@ -91,7 +99,7 @@ import BackgroundLavanda from '../assets/images/BackgroundLavanda.png';
 				</div>	
 			</section>
 
-			<! -- DRESS CODE -->
+			<!-- DRESS CODE -->
 			<section>
 				<div class="section bg-color1">
 					<Icon name="dress" />
@@ -100,7 +108,7 @@ import BackgroundLavanda from '../assets/images/BackgroundLavanda.png';
 				</div>
 			</section>
 
-			<! -- SUGERIR CANCION -->
+			<!-- SUGERIR CANCION -->
 			<section>
 				<div class="section">
 					<Icon name="music" />
@@ -110,14 +118,16 @@ import BackgroundLavanda from '../assets/images/BackgroundLavanda.png';
 				</div>
 			</section>
 
-			<! -- AGRADECIMIENTOS -->
+			<!-- AGRADECIMIENTOS -->
 			<section>
 				<div class="section bg-color1">
 					<p class="text-lg text-[#4B4B4B]">
 						¡Gracias por acompañarme en este momento tan importante de mi vida! <br>
-						Espero que lo disfrutes tanto como yo🥰</p>
+						Espero que lo disfrutes tanto como yo <br>
+						💜
+					</p>
 				</div>
-				<div id="contact" class="pb-4 bg-color1">
+				<div id="contact" class="pb-6 bg-color1 font-bold">
 					<p>Ante cualquier duda, contactate con Yanina (madre): 351-3511843</p>
 				</div>
 			</section>
