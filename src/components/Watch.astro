@@ -6,7 +6,7 @@
 
 <script is:inline>
 
-    var targetDate = new Date(2024, 10, 0o1, 13, 0, 0);
+    var targetDate = new Date(2024, 10, 1, 21, 45, 0);
 
     function updateCountdown() {
         var currentDate = new Date();
@@ -21,7 +21,7 @@
 
         if (timeRemaining <= 100) {
             clearInterval(countdownInterval);
-            document.getElementById('countdown').innerHTML = '¡Tiempo terminado!';
+            document.getElementById('countdown').innerHTML = '¡Ya es hora!';
         }
 }
 
